@@ -11,7 +11,7 @@
 ## Скачать и запустить
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/hysteria-install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/hysteria-install.sh)
 ```
 
 ## Аргументы
@@ -19,7 +19,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 Установить/переустановить с другим SNI
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/hysteria-install.sh) --custom-sni=example.com
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/hysteria-install.sh) --custom-sni=example.com
 ```
 
 # Полная авто-установка Marzban панели (БЕТА)
@@ -31,7 +31,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 С настройками по умолчанию:
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/marzinstall.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/marzinstall.sh)
 ```
 
 # Полная авто-установка 3x-ui панели
@@ -43,7 +43,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 С настройками по умолчанию:
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/3xinstall.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/3xinstall.sh)
 ```
 
 ## Аргументы
@@ -51,13 +51,13 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 Расширенную, с возможностью предустановить свои настройки и установки SelfSNI:
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/3xinstall.sh) --extend
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/3xinstall.sh) --extend
 ```
 
 С автоматической настройкой всего трафика в WARP
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/3xinstall.sh) --warp
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/3xinstall.sh) --warp
 ```
 
 # Установка SNI сайта
@@ -69,31 +69,31 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 ## Скачать и запустить
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/fakesite.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/fakesite.sh)
 ```
 
 ## Аргументы
 ### Настройка своего внутреннего порта в nginx
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/fakesite.sh) --port 9443
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/fakesite.sh) --port 9443
 ```
 
 ### Настройка Nginx без http на 80 порту
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/fakesite.sh) --without-80
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/fakesite.sh) --without-80
 ```
 
 ### Настройка с самоподписным сертификатом
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/fakesite.sh) --self-signed
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/fakesite.sh) --self-signed
 ```
 
 ### Настройка с рандомносгенерированным доменом
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/fakesite.sh) --self-signed --rand-dns
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/fakesite.sh) --self-signed --rand-dns
 ```
 
 Данный аргумент возможно использовать только с --self-signed
@@ -105,7 +105,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 ## Скачать и запустить
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/marzbanfix.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/marzbanfix.sh)
 ```
 
 # Автофикс порта 3x-ui панели
@@ -113,7 +113,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/he
 Автоматически настраивает 3x-ui панель на работу с 8080 портом, запустить скрипт можно с помощью следующей команды:
 
 ``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/3xuiportfix.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/3xuiportfix.sh)
 ```
 
 # Заглушка логина в ISPManager
@@ -150,7 +150,7 @@ Next, download the `index.html` template file from the GitHub repository and sav
 Run the following command:
 
 ```bash
-sudo wget https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/marzban-ispmgr/index.html -O /var/lib/marzban/templates/home/index.html
+sudo wget https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/marzban-ispmgr/index.html -O /var/lib/marzban/templates/home/index.html
 ```
 
 This command will download the `index.html` file and place it in the `/var/lib/marzban/templates/home/` directory.
