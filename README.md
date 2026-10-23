@@ -128,8 +128,8 @@ This guide provides step-by-step instructions for setting up the Marzban home te
 - `wget` installed. If not, you can install it using the following commands:
 
   ```bash
-  sudo apt-get update
-  sudo apt-get install wget
+  apt-get update
+  apt-get install wget
 
 ### Step 1: Create Necessary Directories
 
@@ -138,7 +138,7 @@ First, you'll need to create the necessary directories for the Marzban home temp
 Open your terminal and run the following command:
 
 ```bash
-sudo mkdir -p /var/lib/marzban/templates/home/
+mkdir -p /var/lib/marzban/templates/home/
 ```
 
 This command will create all the required directories in the path `/var/lib/marzban/templates/home/`.
@@ -150,7 +150,7 @@ Next, download the `index.html` template file from the GitHub repository and sav
 Run the following command:
 
 ```bash
-sudo wget https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/marzban-ispmgr/index.html -O /var/lib/marzban/templates/home/index.html
+wget https://raw.githubusercontent.com/quentrol/vless-scripts/refs/heads/main/marzban-ispmgr/index.html -O /var/lib/marzban/templates/home/index.html
 ```
 
 This command will download the `index.html` file and place it in the `/var/lib/marzban/templates/home/` directory.
